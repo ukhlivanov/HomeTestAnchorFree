@@ -1,0 +1,106 @@
+
+.column1 {
+  position:absolute; 
+  float: left;
+  width: 15%;
+  height: 89.5%;
+  background-color: #CBCBCB;
+
+}
+.column2 {
+  position: relative; 
+  float: left;
+  width: 60%;
+  left: 20%;
+  padding: 10px;
+  text-align: left;
+}
+
+.column3 {
+  position: absolute; 
+  float: right;
+  width: 15%;
+  height: 89.5%;
+  left: 75%;
+  text-align: left;
+  background-color: #CBCBCB;
+  font-size: 14px;
+  padding: 10px;
+ 
+}
+
+.vertical-menu {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.vertical-menu li {
+    background-color: #BCBCBC;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+  }
+
+  .vertical-menu .li_active{
+    background-color:#E8E7E7;
+
+  }
+
+
+  li:last-child {
+    border-bottom: 0;
+  }
+
+  .vertical-menu li:hover {
+    background-color: #ccc;
+  }
+  
+
+  .title{
+
+    margin: 0;
+  }
+
+  .right_title{
+    text-align: left;
+    font-weight: 700;
+    font-size: 18px;
+    border-bottom: 4px solid white;
+    margin: 0;
+  }
+
+  .right_child_title{
+    font-weight: 700;
+    border-bottom: 2px solid #9E9E9E;
+  }
+  
+
+
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    height: 87.5vh;          /* instead of using 100% all over, use viewport units once */
+
+    }
+    .box .row.content,
+    .content .one-third.column {
+     flex: 1;                /*fill the space equal, no matter row or column direction */
+    display: flex;
+    }
+    
+
+
+    .left-side { 
+      background: #CBCBCB; 
+      width: calc(50% - 15px);
+    }
+
+    .right-side { 
+      background: #CBCBCB; 
+      width: calc(66.6666% - 15px);
+    }
