@@ -103,38 +103,43 @@ export default class MainMenu extends React.Component{
         } 
         return(
             <HashRouter>
-                <div className = "mainmenu">
-
-                    <div className = 'column1'>
-                        <ul className="vertical-menu">
-                            {arrMenu}
-                        </ul>
-                        <div></div>
+                <div className="container">
+                    <div className="grid-15">
+                            <ul className="vertical-menu">
+                                {arrMenu}
+                            </ul>
                     </div>
-
-                    <div className = 'column2'>
-                        <div className="content">
-                            {arrRoutes}
+                    <div className="grid-70">
+                             <div className="content">
+                                {arrRoutes}
+                            </div>
+                    </div>
+                    <div className="grid-15">
+                        <div className="right">
+                            <p className="right_title">Right side</p>
+                                <div className = "right_content">
+                                <p><span className = "right_child_title">Metus mus montes</span>
+                                <br/>
+                                <span className='right-text'>Cras facilisis urna ornare volutpat, et convallis erat elementum.  
+                                Eget rhoncus nibh metus nec massa.</span></p>
+                            
+                                <p><span className = "right_child_title">Hendrerit dis hendrerit</span>
+                                <br/>
+                                <span className='right-text'>Maecenas hendrerit laoreet augue molestie. 
+                                Cum sociis natoque penatibus et magnis dis parturient 
+                                montes, nascetur hendrerit mus.</span></p>
+                            
+                                <p><span className = "right_child_title">Natoque ridiculus parturient</span>
+                                <br/>
+                                <span className='right-text'>Maecenas hendrerit laoreet augue nec molestie. 
+                                Cum sociis natoque penatibus et magnis dis parturient 
+                                montes.</span></p>   
+                                </div>
+                             
                         </div>
+                            
                     </div>
 
-                    <div className = 'column3'>
-                        <p className="right_title">Right side</p>
-                        <p><span className = "right_child_title">Metus mus montes</span>
-                        <br/>Cras facilisis urna ornare ex volutpat, et convallis erat elementum.  
-                            Eget rhoncus nibh metus nec massa.</p>
-                        
-                        <p><span className = "right_child_title">Hendrerit dis hendrerit</span>
-                        <br/>Maecenas hendrerit laoreet augue nec molestie. 
-                            Cum sociis natoque penatibus et magnis dis parturient 
-                            montes, nascetur hendrerit mus.</p>
-                        
-                        <p><span className = "right_child_title">Natoque ridiculus parturient</span>
-                        <br/>Maecenas hendrerit laoreet augue nec molestie. 
-                            Cum sociis natoque penatibus et magnis dis parturient 
-                            montes.</p>    
-                    </div>
-    
                 </div>
             </HashRouter>
     
